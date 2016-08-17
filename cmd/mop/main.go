@@ -5,23 +5,24 @@
 package main
 
 import (
-	`github.com/michaeldv/mop`
-	`github.com/michaeldv/termbox-go`
-	`time`
+	"time"
+
+	"github.com/danielbarbarito/mop"
+	"github.com/michaeldv/termbox-go"
 )
 
 const help = `Mop v0.2.0 -- Copyright (c) 2013-2016 by Michael Dvorkin. All Rights Reserved.
 NO WARRANTIES OF ANY KIND WHATSOEVER. SEE THE LICENSE FILE FOR DETAILS.
 
 <u>Command</u>    <u>Description                                </u>
-   +       Add stocks to the list.
-   -       Remove stocks from the list.
-   ?       Display this help screen.
-   g       Group stocks by advancing/declining issues.
-   o       Change column sort order.
-   p       Pause market data and stock updates.
-   q       Quit mop.
-  esc      Ditto.
+	 +       Add stocks to the list.
+	 -       Remove stocks from the list.
+	 ?       Display this help screen.
+	 g       Group stocks by advancing/declining issues.
+	 o       Change column sort order.
+	 p       Pause market data and stock updates.
+	 q       Quit mop.
+	esc      Ditto.
 
 Enter comma-delimited list of stock tickers when prompted.
 
